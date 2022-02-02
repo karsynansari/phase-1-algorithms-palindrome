@@ -1,9 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let p = word.length -1; 
+  for(let i=0; i<p/2 ; i++) {
+    let f = word[i]; 
+    let b = word[p-i] ; 
+    if( f!=b) {
+      return false
+    }
+    return true
+  }
 }
 
 /* 
-  Add your pseudocode here
+Iterate over the string arguement forwards and backwards 
+  Use a loop 
+If all forward and backwards characters match, true
+If not, then not a palindrome 
 */
 
 /*
